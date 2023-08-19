@@ -1,3 +1,4 @@
+let incomeValue = 0;
 function calculateWithButton(){
     const income = textField('income')
     const food = textField('food')
@@ -7,6 +8,7 @@ function calculateWithButton(){
         alert('please provide a valid number')
         return;
     }
+    incomeValue=income;
     const allExpense = food + rent + clothes;
     const tBalance = income - allExpense;
     textInnerSet('expenses', allExpense )
@@ -33,18 +35,18 @@ function innerTextSet(idValid, tBalance){
 }
 
 function savingButton(){
-
     const savingInput = textField('saving-amount');
-    const incomeValue = document.getElementById('income').value;
+    // const incomeValue = document.getElementById('income').value;
     const result = parseFloat(incomeValue) * .20;
+
     const valueSet = document.getElementById('saving-amountt');
     valueSet.innerText = result;
 
-    const totalExpances = document.getElementById('expenses').innerText;
-    const expences = parseFloat(totalExpances);
-    const sum = expences - result;
+    const totalExpanses = document.getElementById('balance').innerText;
+    const expenses = parseFloat(totalExpanses);
+    const sum = expenses - result;
     innerTextSet('remaining-balance', sum);
-}
+ }
 
 
 
