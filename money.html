@@ -22,31 +22,31 @@
             <h1 class="text-center text-2xl font-medium mt-3">Income</h1>
             <div class="flex justify-center mt-4 gap-2 ">
                 <h1>Income:</h1>
-                <input class="bg-[#DCDCDC] pl-2" placeholder="10000" type="text" name="" id="">
+                <input class="bg-[#DCDCDC] pl-2" placeholder="10000" type="text" name="" id="income">
             </div>
             <h1 class="text-center text-2xl font-medium mt-3">Expenses</h1>
             <div class="flex justify-center mt-4 gap-2 ">
                 <h1>Food:</h1>
-                <input class="bg-[#DCDCDC] pl-2" type="text" placeholder="3000" name="" id="">
+                <input class="bg-[#DCDCDC] pl-2" type="text" placeholder="3000" name="" id="food">
             </div>
             <div class="flex justify-center mt-4 gap-2 ">
                 <h1>Rent:</h1>
-                <input class="bg-[#DCDCDC] pl-2" type="text" placeholder="2000" name="" id="">
+                <input class="bg-[#DCDCDC] pl-2" type="text" placeholder="2000" name="" id="rent">
             </div>
             <div class="flex justify-center mt-4 gap-2 ">
                 <h1>Clothes:</h1>
-                <input class="bg-[#DCDCDC] pl-2" type="text" placeholder="500" name="" id="">
+                <input class="bg-[#DCDCDC] pl-2" type="text" placeholder="500" name="" id="clothes">
             </div>
-            <button class="btn bg-[#59A5FF] text-white flex mx-auto mt-3 px-8">Calculate</button>
-            <h1 class="text-center text-2xl font-medium mt-3">Total Expenses: 5500 </h1>
-            <h2 class="text-center text-2xl font-medium mt-6">Balance: 4500</h2>
+            <button onclick="calculateWithButton()" class="btn bg-[#59A5FF] text-white flex mx-auto mt-3 px-8">Calculate</button>
+            <h1 class="text-center text-2xl font-medium mt-3">Total Expenses: <span id="expenses">0</span> </h1>
+            <h2 class="text-center text-2xl font-medium mt-6">Balance: <span id="balance">0</span></h2>
             <div class="flex mt-3 mx-auto items-center text-center justify-center gap-3">
                 <h1>Save:</h1>
-                <input class="bg-[#DCDCDC] px-8 py-2 pl-2 w-28 text-center" type="text" placeholder="20" name="" id=""> %
-                <button class="btn bg-[#59A5FF] text-white px-12">Save</button>
+                <input class="bg-[#DCDCDC] px-8 py-2 pl-2 w-28 text-center" type="text" placeholder="20" name="" id="saving-amount"> %
+                <button onclick="savingButton()" class="btn bg-[#59A5FF] text-white px-12">Save</button>
             </div>
-            <h1 class="text-center text-2xl font-medium mt-3">Saving Amount: 2000 </h1>
-            <h2 class="text-center text-2xl font-medium mt-3">Remaining Balance: 2500 </h2>
+            <h1 class="text-center text-2xl font-medium mt-3">Saving Amount: <span id="saving-amountt">0</span> </h1>
+            <h2 class="text-center text-2xl font-medium mt-3">Remaining Balance: <span id="remaining-balance">0</span></h2>
         </div>
     </main>
     <script src="./js/money.js"></script>
