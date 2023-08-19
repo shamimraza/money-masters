@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center mt-6 text-3xl text-[#31A5AC] font-semibold">Money Master💰</h1>
+
+    </header>
+    <main class="grid grid-cols-1 lg:grid-cols-2 ml-8 mr-8">
+        <div class="flex-1">
+            <img class="w-[705px] h-[600px] mt-4" src="./money.jpeg" alt="">
+        </div>
+        <div class="flex-1 bg-[#F8F8F8] mt-4">
+            <h1 class="text-center text-2xl font-medium mt-3">Income</h1>
+            <div class="flex justify-center mt-4 gap-2 ">
+                <h1>Income:</h1>
+                <input class="bg-[#DCDCDC] pl-2" placeholder="10000" type="text" name="" id="">
+            </div>
+            <h1 class="text-center text-2xl font-medium mt-3">Expenses</h1>
+            <div class="flex justify-center mt-4 gap-2 ">
+                <h1>Food:</h1>
+                <input class="bg-[#DCDCDC] pl-2" type="text" placeholder="3000" name="" id="">
+            </div>
+            <div class="flex justify-center mt-4 gap-2 ">
+                <h1>Rent:</h1>
+                <input class="bg-[#DCDCDC] pl-2" type="text" placeholder="2000" name="" id="">
+            </div>
+            <div class="flex justify-center mt-4 gap-2 ">
+                <h1>Clothes:</h1>
+                <input class="bg-[#DCDCDC] pl-2" type="text" placeholder="500" name="" id="">
+            </div>
+            <button class="btn bg-[#59A5FF] text-white flex mx-auto mt-3 px-8">Calculate</button>
+            <h1 class="text-center text-2xl font-medium mt-3">Total Expenses: 5500 </h1>
+            <h2 class="text-center text-2xl font-medium mt-6">Balance: 4500</h2>
+            <div class="flex mt-3 mx-auto items-center text-center justify-center gap-3">
+                <h1>Save:</h1>
+                <input class="bg-[#DCDCDC] px-8 py-2 pl-2 w-28 text-center" type="text" placeholder="20" name="" id=""> %
+                <button class="btn bg-[#59A5FF] text-white px-12">Save</button>
+            </div>
+            <h1 class="text-center text-2xl font-medium mt-3">Saving Amount: 2000 </h1>
+            <h2 class="text-center text-2xl font-medium mt-3">Remaining Balance: 2500 </h2>
+        </div>
+    </main>
+    <script src="./js/money.js"></script>
+</body>
+
+</html>
